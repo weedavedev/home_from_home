@@ -1,0 +1,1 @@
+import{a as o,t as i}from"../chunks/disclose-version.DlDa2XHU.js";import"../chunks/legacy.CpUqJXGc.js";var n=i('<div class="container"><h1>Terms and conditions</h1> <div class="content-grid"><div class="text-content"><p>To be updated!</p></div></div></div>');function p(t){var a=n();o(t,a)}export{p as component};
