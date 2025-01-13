@@ -1,0 +1,8 @@
+.nav-menu {
+    display: flex;
+    font-size: 3rem;
+    text-decoration: underline;
+}
+.site-logo {
+    height: 10em;
+}

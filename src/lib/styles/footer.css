@@ -1,0 +1,13 @@
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.social-icons img {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
