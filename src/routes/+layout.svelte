@@ -5,6 +5,9 @@
 	import '$lib/styles/global.css';
 
 	export const prerender = true;
+
+	export const ssr = true;
+	export const trailingSlash = 'always';
 </script>
 
 <div class="min-h-screen flex flex-col">
