@@ -22,7 +22,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to GitHub Pages
-        uses: weedavedev/home_from_home@v1
+        uses: weedavedev/home_from_home
         with:
           folder: build
           branch: gh-pages
