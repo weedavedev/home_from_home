@@ -1,6 +1,14 @@
-<script lang="ts">
+<script>
 	import '../app.css';
-	let { children } = $props();
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import '$lib/styles/global.css';
 </script>
 
-{@render children()}
+<div class="min-h-screen flex flex-col">
+	<Header />
+	<main class="flex-grow">
+		<slot />
+	</main>
+	<Footer />
+</div>
