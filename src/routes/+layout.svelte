@@ -5,7 +5,6 @@
 	import '$lib/styles/global.css';
 
 	export const prerender = true;
-
 	export const ssr = true;
 	export const trailingSlash = 'always';
 </script>

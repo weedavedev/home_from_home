@@ -1,3 +1,66 @@
+<!-- src/routes/+page.svelte (or any other component) -->
+<script>
+	import ImageGrid from '$lib/components/ImageGrid.svelte';
+	import ImageGallery from '$lib/components/ImageGallery.svelte';
+
+	const about_us_images = [
+		{
+			src: '/images/general/wendy_dogs_snow.jpg',
+			alt: 'Wendy and dogs in the snow.'
+		},
+		{
+			src: '/images/general/walking_club_group.jpg',
+			alt: '7 dogs all paying attention to the camera.'
+		},
+		{
+			src: '/images/general/darcy_murphy_couch.jpg',
+			alt: 'Darcy and Murphy chilling on the couch.'
+		}
+	];
+
+	const extra_about_images = [
+		{
+			src: '/images/general/kitchen_club_group.png',
+			alt: '5 dogs paying attention in the kitchen.'
+		},
+		{
+			src: '/images/general/sharing_stick.jpg',
+			alt: 'Basil and Murphy playings with the same stick.'
+		},
+		{
+			src: '/images/general/sunset_posing.jpg',
+			alt: '6 dogs sitting in Archies freedom field.'
+		}
+	];
+
+	const certificate_images = [
+		{
+			src: '/images/general/certificates/pet_business_insurance.jpg',
+			alt: 'Pet Business insurance certificate'
+		},
+		{
+			src: '/images/general/certificates/PKC_license.jpg',
+			alt: 'PKC License certificate'
+		},
+		{
+			src: '/images/general/certificates/disclosure-scotland-768x201.png',
+			alt: 'Disclosure Scotland Certificate'
+		},
+		{
+			src: '/images/general/certificates/first_aid_at_work.png',
+			alt: 'First Aid At Work certificate'
+		},
+		{
+			src: '/images/general/certificates/professional-dog-walkers.png',
+			alt: 'Professional Dog Walkers'
+		},
+		{
+			src: '/images/general/certificates/k9_first_aid.png',
+			alt: 'k9 first aid certificate'
+		}
+	];
+</script>
+
 <div class="container mx-auto px-4 py-8">
 	<div class="content-grid">
 		<h1 class="text-2xl font-bold mb-6">About Us</h1>
@@ -10,6 +73,13 @@
 					have streamlined Home From Home to offer dog walking weekly on Tuesday, Wednesday and Thursday and
 					Homeboarding on the dates agreed.</p>
 			</div>
+
+			<ImageGallery
+				images={about_us_images}
+				title="About us images"
+			/>
+
+
 			<div class="text-content">
 				<h2 class="text-xl font-semibold mb-3">We offer:</h2>
 				<ul class="list-disc pl-6 mb-4">
@@ -34,6 +104,13 @@
 			</div>
 
 		</div>
+
+
+		<ImageGallery
+			images={extra_about_images}
+			title="Home from home"
+		/>
+
 		<div class="text-content">
 			<div class="mb-6">
 				<h2 class="text-2xl font-bold mb-4">Tariff</h2>
@@ -69,42 +146,15 @@
 
 		</div>
 
-		<div class="image-container certificates-gallery">
-			<img
-				src="/images/general/certificates/pet_business_insurance.jpg"
-				alt="Pet Business insurance certificate"
-				class="image"
-			/>
+		<!-- Custom styling -->
+		<ImageGrid
+			images={certificate_images}
+			title="Certificates and partnership."
+			columns={2}
+			gap="2rem"
+			padding="2rem"
+			maxWidth="1200px"
+		/>
 
-			<img
-				src="/images/general/certificates/PKC_license.jpg"
-				alt="PKC License certificate"
-				class="image"
-			/>
-
-			<img
-				src="/images/general/certificates/disclosure-scotland-768x201.png"
-				alt="Disclosure Scotland Certificate"
-				class="image"
-			/>
-
-			<img
-				src="/images/general/certificates/first_aid_at_work.png"
-				alt="First Aid AtWork certificate"
-				class="image"
-			/>
-
-			<img
-				src="/images/general/certificates/profesional-dog-walkers.png"
-				alt="Profesional Dog Walkers"
-				class="image"
-			/>
-
-			<img
-				src="/images/general/certificates/k9_first_aid.png"
-				alt="k9 first aid certificate"
-				class="image"
-			/>
-		</div>
 	</div>
 </div>

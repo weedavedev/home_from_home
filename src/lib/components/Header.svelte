@@ -1,6 +1,6 @@
 <script>
-	import '../styles/global.css';
-	import '../styles/header.css';
+	import '$lib/styles/global.css';
+	import '$lib/styles/header.css';
 </script>
 
 <header class="bg-white py-4 shadow-sm">

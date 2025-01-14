@@ -1,6 +1,6 @@
 <script>
-	import '../styles/global.css';
-	import '../styles/footer.css';
+	import '$lib/styles/global.css';
+	import '$lib/styles/footer.css';
 </script>
 
 <footer class="bg-white py-4 mt-auto border-t border-gray-200">
