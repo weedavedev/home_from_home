@@ -1,4 +1,4 @@
-<!-- src/lib/components/BaseImage.svelte -->
+<!-- src/lib/components/Image.svelte -->
 <script>
 	import '$lib/styles/BaseImage.css';
 	import { base } from '$app/paths';  // Import base path from SvelteKit

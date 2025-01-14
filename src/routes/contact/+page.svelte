@@ -1,5 +1,6 @@
 <script>
 	import './styles/contact.css';
+	import Image from '$lib/components/Image.svelte';
 
 	let formData = {
 		name: '',
@@ -38,13 +39,11 @@
 					<h2 class="font-serif italic text-gray-700 text-2xxl transform -rotate-2">Wendy</h2>
 				</div>
 			</div>
-			<div class="image-container">
-				<img
-					src="/images/general/chick_laptop_contact_us.jpeg"
-					alt="Chicky the dog looking at documents"
-					class="image"
-				/>
-			</div>
+			<Image
+				src="/images/general/chick_laptop_contact_us.jpeg"
+				alt="Chicky the dog looking at documents"
+				className="mx-auto w-auto"
+			/>
 		</div>
 
 		<form on:submit={handleSubmit} class="contact-form">
