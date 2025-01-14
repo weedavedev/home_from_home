@@ -7,6 +7,8 @@ on:
 jobs:
   build_site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write  # This is crucial for allowing pushes to gh-pages
 
     steps:
       - name: Checkout
