@@ -8,18 +8,12 @@ jobs:
   build_site:
     runs-on: ubuntu-latest
 
-    # Add these permissions at the job level
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
       - name: Checkout
-        uses: actions/checkout@v4  # Updated to v4
+        uses: actions/checkout@v4
 
       - name: Install Node.js
-        uses: actions/setup-node@v4  # Updated to v4
+        uses: actions/setup-node@v4
         with:
           node-version: 18
           cache: npm
@@ -34,21 +28,9 @@ jobs:
           npm run build
           touch build/.nojekyll
 
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3  # Updated to v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: 'build/'
-
-  deploy:
-    needs: build_site
-    runs-on: ubuntu-latest
-
-    # Remove permissions from here since they're now at the job level
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4  # Updated to v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
