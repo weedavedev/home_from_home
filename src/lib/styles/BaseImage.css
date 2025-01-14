@@ -5,3 +5,16 @@
     object-fit: cover;
     border-radius: 0.25rem;
 }
+/* Social icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin: 30px auto;
+    justify-content: center;
+}
+
+.social-icons-img {
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
