@@ -1,38 +1,19 @@
-# sv
+# Home from home static site revamp
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Been playing with svelte for a while now, off and on, Now trying to push is as a direct replacement for old wordPress sites that are
+effectively just simple static site. These run with minimal over heads and also a lot less security problems and potential issues. 
+## Technical-ish stuff
 
-## Creating a project
+The framework is SvelteKit locally developed in Webstorm, built using vite.
+GitHub is doing the hosting through the pages feature and nameservers in DNS settings pointing here.
 
-If you're seeing this, you've probably already done this step. Congrats!
+### Todo
 
-```bash
-# create a new project in the current directory
-npx sv create
-
-# create a new project in my-app
-npx sv create my-app
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+- Initial Branch (Main)
+    * ~~Create basic site locally~~
+    * ~~Host site on gitHub pages~~
+      * change name servers in DNS to point to gitHub
+    * ~~Create pages and layout~~ 
+    * ~~Add image handler, both simple and gallery style, incl lightbox~~
+    * ~~Build~~ and enable form functions
+      * Decide on EmailJS or other alternative
