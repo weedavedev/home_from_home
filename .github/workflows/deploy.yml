@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: ['main']
+    branches: [ 'main' ]
 
 jobs:
   build_site:
@@ -29,6 +29,7 @@ jobs:
         run: |
           npm run build
           touch build/.nojekyll
+          echo "dogshomefromhome.co.uk" > build/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3

@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import '$lib/styles/global.css';
 	import '$lib/styles/footer.css';
 	import Image from '$lib/components/Image.svelte';
@@ -30,6 +31,6 @@
 			</a>
 		</div>
 		<p>&copy; {new Date().getFullYear()} Home From Home. All rights reserved.</p>
-		<a href="/terms_and_conditions">Terms and conditions</a>
+		<a href="{base}/terms_and_conditions">Terms and conditions</a>
 	</div>
 </footer>
