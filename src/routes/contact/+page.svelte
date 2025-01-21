@@ -15,19 +15,18 @@
 </script>
 <div class="container mx-auto px-4 py-8">
 	<div class="content-grid">
-		<h1 class="text-2xl font-bold mb-6">Contact Us</h1>
+		<h1 class="">Contact Us</h1>
 		<div class="content-grid">
 			<div class="text-content">
 				<div class="mb-6">
 					<p class="mb-4">If you wish to discuss one of our services and availability please Whatsapp or Message Wendy
 						Wallace on 07950020820 and I will get back to you.</p>
 					<p class="mb-4">If we can help, I will then arrange to meet you and your dog in your home, go over your
-						requirements, meet your dog, fillin some forms and discuss our procedures.</p>
+						requirements, meet your dog, fill in some forms and discuss our procedures.</p>
 				</div>
 
 				<div class="mb-6">
-					<h2 class="text-2xl font-bold mb-4">If we can't help we can offer other recommendations</h2>
-					<p class="mb-4">We are proud to be a member of Strathearn Dogs, a local Whatsapp dog/ pet business owners
+					<p class="mb-4">If we can't help we can offer other recommendations, We are proud to be a member of Strathearn Dogs, a local Whatsapp dog/ pet business owners
 						group.
 						With over 40 members we support each other, share enquiries and provide the following services - dog
 						walking,
@@ -78,6 +77,5 @@
 			</div>
 			<button type="submit">Send Message</button>
 		</form>
-
 	</div>
 </div>

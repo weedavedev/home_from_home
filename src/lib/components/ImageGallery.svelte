@@ -38,7 +38,7 @@
 
 <div class="gallery-wrapper">
 	{#if title}
-		<h2>{title}</h2>
+		<h3>{title}</h3>
 	{/if}
 
 	<div class="image-grid">

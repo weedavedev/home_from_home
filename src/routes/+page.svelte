@@ -60,14 +60,12 @@
 		}
 	];
 </script>
-
-<div class="container mx-auto px-4 py-8">
+<div class="container">
 	<div class="content-grid">
-		<h1 class="text-2xl font-bold mb-6">About Us</h1>
+		<h1>About Us</h1>
 		<div class="text-content">
-
-			<div class="mb-6">
-				<p class="mb-4">I established Home From Home in October 2019 to offer a variety of dog related services. With
+			<div>
+				<p>I established Home From Home in October 2019 to offer a variety of dog related services. With
 					over 40 years experience of owning dogs and a variety of pets, creating a dog/ animal related business has
 					been a dream come true. I now own and run two dog based businesses, Home From Home and Let The Dogs Run. I
 					have streamlined Home From Home to offer dog walking weekly on Tuesday, Wednesday and Thursday and
@@ -79,32 +77,46 @@
 				title="About us images"
 			/>
 
-
 			<div class="text-content">
-				<h2 class="text-xl font-semibold mb-3">We offer:</h2>
-				<ul class="list-disc pl-6 mb-4">
-					<li class="mb-2">1 hour social group walks - Group walks with up to 10 dogs - limited places available.</li>
-					<li class="mb-2">Extended walks - dogs are with me for up to 5hours - limited availability.</li>
-					<li class="mb-2">Home boarding* - Insured and licensed with Perth and Kinross Council. Dogs are cared for in
-						my home as if they are one of my own while their owners are away - Fully booked for 2025
-					</li>
-				</ul>
-
+				<h2>We offer:</h2>
+				<div class="overflow-x-auto">
+					<table class="w-full border-collapse border border-gray-300">
+						<thead>
+						<tr class="bg-gray-100">
+							<th class="border border-gray-300 p-2 w-1/4">Service</th>
+							<th class="border border-gray-300 p-2 w-3/4">Description</th>
+						</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<td class="border border-gray-300 p-2">Group Walks</td>
+							<td class="border border-gray-300 p-2">1 hour social group walks - Group walks with up to 10 dogs - limited places available.</td>
+						</tr>
+						<tr>
+							<td class="border border-gray-300 p-2">Extended Walks</td>
+							<td class="border border-gray-300 p-2">Dogs are with me for up to 5 hours - limited availability.</td>
+						</tr>
+						<tr>
+							<td class="border border-gray-300 p-2">Home Boarding*</td>
+							<td class="border border-gray-300 p-2">Insured and licensed with Perth and Kinross Council. Dogs are cared for in my home as if they are one of my own while their owners are away - Fully booked for 2025</td>
+						</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
+
 			<div class="text-content">
-				<p class="mb-4">Home from Home dog walks and extended walks are based at Let The Dogs Run (<a
+				<p>Home from Home dog walks and extended walks are based at <a
 					href="https://www.letthedogsrun.uk"
 					class="text-blue-600 hover:underline">Let The Dogs Run</a>).
 					My dog park is situated in Tullibardine just outside Auchterarder. We only offer hour-long social group walks
 					for up to 10 dogs in one of our three deer fenced enclosures. This enviroment offers all the dogs the chance
 					to be off lead, run free, sniff, play and socialise at their own pace within the safety of our dog park.</p>
 
-				<p class="mb-6">All our services are designed around each dog's individual needs and offer the type of care
+				<p>All our services are designed around each dog's individual needs and offer the type of care
 					their owners have requested.</p>
 			</div>
-
 		</div>
-
 
 		<ImageGallery
 			images={extra_about_images}
@@ -112,8 +124,8 @@
 		/>
 
 		<div class="text-content">
-			<div class="mb-6">
-				<h2 class="text-2xl font-bold mb-4">Tariff</h2>
+			<div>
+				<h2>Tariff</h2>
 				<div class="overflow-x-auto">
 					<table class="w-full border-collapse border border-gray-300">
 						<thead>
@@ -143,7 +155,6 @@
 					</table>
 				</div>
 			</div>
-
 		</div>
 
 		<!-- Custom styling -->
