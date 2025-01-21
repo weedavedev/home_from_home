@@ -10,10 +10,10 @@ const config = {
 			strict: true
 		}),
 		paths: {
-			base: process.env.NODE_ENV === 'production' ? '/home_from_home' : ''
+			base: ''  // Remove the base path since you're using a custom domain
 		},
 		prerender: {
-			entries: ['*']  // This prerenders all pages
+			entries: ['*']
 		}
 	}
 };
