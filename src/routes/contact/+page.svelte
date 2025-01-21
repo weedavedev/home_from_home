@@ -1,22 +1,11 @@
 <script>
 	import './styles/contact.css';
 	import Image from '$lib/components/Image.svelte';
-
-	let formData = {
-		name: '',
-		email: '',
-		message: ''
-	};
-
-	const handleSubmit = (e) => {
-		e.preventDefault();
-		console.log('Form submitted:', formData);
-	};
+	import ContactForm from '$lib/components/ContactForm.svelte';
 </script>
 <div class="container mx-auto px-4 py-8">
 	<div class="content-grid">
 		<h1 class="">Contact Us</h1>
-		<div class="content-grid">
 			<div class="text-content">
 				<div class="mb-6">
 					<p class="mb-4">If you wish to discuss one of our services and availability please Whatsapp or Message Wendy
@@ -26,7 +15,8 @@
 				</div>
 
 				<div class="mb-6">
-					<p class="mb-4">If we can't help we can offer other recommendations, We are proud to be a member of Strathearn Dogs, a local Whatsapp dog/ pet business owners
+					<p class="mb-4">If we can't help we can offer other recommendations, We are proud to be a member of Strathearn
+						Dogs, a local Whatsapp dog/ pet business owners
 						group.
 						With over 40 members we support each other, share enquiries and provide the following services - dog
 						walking,
@@ -38,6 +28,7 @@
 					<h2 class="font-serif italic text-gray-700 text-2xxl transform -rotate-2">Wendy</h2>
 				</div>
 			</div>
+
 			<Image
 				src="/images/general/chick_laptop_contact_us.jpeg"
 				alt="Chicky the dog looking at documents"
@@ -45,37 +36,6 @@
 			/>
 		</div>
 
-		<form on:submit={handleSubmit} class="contact-form">
-			<div class="form-group">
-				<label for="name">Name</label>
-				<input
-					type="text"
-					id="name"
-					bind:value={formData.name}
-					required
-				/>
-			</div>
+		<ContactForm	/>
 
-			<div class="form-group">
-				<label for="email">Email</label>
-				<input
-					type="email"
-					id="email"
-					bind:value={formData.email}
-					required
-				/>
-			</div>
-
-			<div class="form-group">
-				<label for="message">Message</label>
-				<textarea
-					id="message"
-					bind:value={formData.message}
-					rows="4"
-					required
-				></textarea>
-			</div>
-			<button type="submit">Send Message</button>
-		</form>
-	</div>
 </div>
