@@ -1,0 +1,29 @@
+/* src/lib/styles/NavBar.css */
+.navbar-container {
+    @apply relative w-full max-w-xl mx-auto py-4;
+}
+
+.nav-links {
+    @apply relative flex justify-center items-center gap-16;
+}
+
+.nav-indicator {
+    @apply absolute bottom-0 h-0.5 bg-red-400 transition-all duration-300 ease-in-out;
+    width: 48px; /* Fixed width for the indicator */
+}
+
+.nav-link {
+    @apply text-3xl font-['Merriweather',_serif] pb-2 tracking-wide transition-colors duration-200
+    text-gray-600 hover:text-gray-800 relative no-underline;
+}
+
+.nav-link.active {
+    @apply text-red-500;
+}
+
+/* Add view transition for the indicator */
+::view-transition-old(nav-indicator),
+::view-transition-new(nav-indicator) {
+    animation: none;
+    mix-blend-mode: normal;
+}

@@ -1,18 +1,34 @@
+<!-- src/routes/+layout.svelte -->
 <script>
 	import '../app.css';
 	import Header from '$lib/components/Header.svelte';
 	import Footer from '$lib/components/Footer.svelte';
 	import '$lib/styles/global.css';
+	import '$lib/styles/transitions.css';
+	import { onNavigate } from '$app/navigation';
 
 	export const prerender = true;
 	export const ssr = true;
 	export const trailingSlash = 'always';
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <div class="min-h-screen flex flex-col">
 	<Header />
 	<main class="flex-grow">
-		<slot />
+		<div style="view-transition-name: page">
+			<slot />
+		</div>
 	</main>
 	<Footer />
 </div>

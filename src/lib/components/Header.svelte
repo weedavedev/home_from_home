@@ -2,7 +2,9 @@
 	import '$lib/styles/global.css';
 	import '$lib/styles/header.css';
 	import { base } from '$app/paths';
+
 	import Image from '$lib/components/Image.svelte';
+	import NavBar from '$lib/components/NavBar.svelte';
 </script>
 
 <header class="bg-white py-4 shadow-sm">
@@ -15,11 +17,6 @@
 			/>
 		</div>
 
-		<div class="p-8">
-			<ul class="flex gap-8">
-				<li><a href="{base}/" class="text-red-500 hover:text-red-700">About</a></li>
-				<li><a href="{base}/contact" class="text-red-500 hover:text-red-700">Contact</a></li>
-			</ul>
-		</div>
+		<NavBar />
 	</nav>
 </header>

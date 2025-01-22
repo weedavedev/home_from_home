@@ -1,7 +1,7 @@
 <script>
 	import './styles/contact.css';
 	import Image from '$lib/components/Image.svelte';
-	import ContactForm from '$lib/components/ContactForm.svelte';
+	import ContactForm from '$lib/components/contact/ContactForm.svelte';
 </script>
 <div class="container mx-auto px-4 py-8">
 	<div class="content-grid">

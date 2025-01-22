@@ -15,15 +15,6 @@
         @apply font-['Source_Sans_Pro',_sans-serif] text-base;
     }
 
-    /* Navigation specific styling */
-    nav li {
-        @apply text-4xl;  /* or text-3xl if you want it larger */
-    }
-
-    nav li a {
-        @apply no-underline hover:underline; /* No underline by default, shows on hover */
-    }
-
     /* Headers - updated sizes based on your container h1/h2 preferences */
     h1 {
         @apply font-['Merriweather',_serif] font-bold text-4xl mb-6 text-gray-700;
