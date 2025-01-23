@@ -11,7 +11,7 @@
 	<nav class="container mx-auto px-4 flex flex-col items-center gap-4">
 		<div>
 			<Image
-				src="/images/logos/DH4H_cropped-logo-218x175.jpg"
+				src="/images/logos/DogsHomeFromHomeLogo.jpg"
 				alt="Home From Home logo"
 				className="site-logo h-24 w-auto"
 			/>

@@ -2,7 +2,7 @@
 <script>
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
-	import '$lib/styles/NavBar.css';
+	import '$lib/styles/nev-bar.css';
 
 	// Determine active tab based on current path
 	$: activeTab = $page.url.pathname === '/' ? 'about' : 'contact';

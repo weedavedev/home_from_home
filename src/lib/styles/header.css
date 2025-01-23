@@ -1,8 +1,7 @@
 .nav-menu {
-    display: flex;
-    font-size: 3rem;
-    text-decoration: underline;
+    @apply flex text-5xl underline;
 }
+
 .site-logo {
-    height: 10em;
+    @apply h-40;
 }

@@ -1,4 +1,4 @@
-/* src/lib/styles/NavBar.css */
+/* src/lib/styles/nev-bar.css */
 .navbar-container {
     @apply relative w-full max-w-xl mx-auto py-4;
 }

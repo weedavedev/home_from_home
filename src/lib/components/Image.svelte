@@ -1,6 +1,6 @@
 <!-- src/lib/components/Image.svelte -->
 <script>
-	import '$lib/styles/BaseImage.css';
+	import '$lib/styles/image.css';
 	import { base } from '$app/paths';  // Import base path from SvelteKit
 
 	export let src;

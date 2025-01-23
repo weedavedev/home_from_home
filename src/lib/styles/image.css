@@ -1,20 +1,12 @@
-/* src/lib/styles/BaseImage.css */
-.base-image {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    border-radius: 0.25rem;
+/* src/lib/styles/image.css */
+.image {
+    @apply w-auto h-auto max-w-[75%] max-h-[30rem] rounded shadow-sm mx-auto object-cover;
 }
-/* Social icons */
+
 .social-icons {
-    display: flex;
-    gap: 15px;
-    margin: 30px auto;
-    justify-content: center;
+    @apply flex gap-4 my-8 justify-center;
 }
 
 .social-icons-img {
-    width: 10rem;
-    height: 10rem;
-    cursor: pointer;
+    @apply w-10 h-10 cursor-pointer; /* Reduced from 40rem to more reasonable size */
 }

@@ -1,7 +1,7 @@
 <!-- src/lib/components/about/Services.svelte -->
 <script>
 	import ImageGallery from '../ImageGallery.svelte';
-	import { extra_about_images } from '$lib/data/aboutImages.js';
+	import { extra_about_images } from '$lib/data/about-images.js';
 </script>
 
 		<div class="text-content">

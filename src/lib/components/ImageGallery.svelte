@@ -1,5 +1,5 @@
 <script>
-	import '$lib/styles/ImageGallery.css';
+	import '$lib/styles/image-gallery.css';
 	import BaseImage from '$lib/components/Image.svelte';
 
 	export let images = [];

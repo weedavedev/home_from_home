@@ -1,29 +1,29 @@
 export const about_us_images = [
 	{
-		src: '/images/general/wendy_dogs_snow.jpg',
+		src: '/images/general/wendy-dogs-snow.jpg',
 		alt: 'Wendy and dogs in the snow.'
 	},
 	{
-		src: '/images/general/walking_club_group.jpg',
+		src: '/images/general/walking-club-group.jpg',
 		alt: '7 dogs all paying attention to the camera.'
 	},
 	{
-		src: '/images/general/darcy_murphy_couch.jpg',
+		src: '/images/general/darcy-murphy-couch.jpg',
 		alt: 'Darcy and Murphy chilling on the couch.'
 	}
 ];
 
 export const extra_about_images = [
 	{
-		src: '/images/general/kitchen_club_group.png',
+		src: '/images/general/kitchen-club-group.png',
 		alt: '5 dogs paying attention in the kitchen.'
 	},
 	{
-		src: '/images/general/sharing_stick.jpg',
+		src: '/images/general/sharing-stick.jpg',
 		alt: 'Basil and Murphy playings with the same stick.'
 	},
 	{
-		src: '/images/general/sunset_posing.jpg',
+		src: '/images/general/sunset-posing.jpg',
 		alt: '6 dogs sitting in Archies freedom field.'
 	}
 ];

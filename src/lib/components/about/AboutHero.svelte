@@ -1,7 +1,7 @@
 <!-- src/lib/components/about/AboutHero.svelte -->
 <script>
 	import ImageGallery from '../ImageGallery.svelte';
-	import { about_us_images } from '$lib/data/aboutImages.js';
+	import { about_us_images } from '$lib/data/about-images.js';
 </script>
 
 <div class="text-content">

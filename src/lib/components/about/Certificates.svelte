@@ -1,7 +1,7 @@
 <!-- src/lib/components/about/Certificates.svelte -->
 <script>
 	import ImageGrid from '../ImageGrid.svelte';
-	import { certificate_images } from '$lib/data/aboutImages.js';
+	import { certificate_images } from '$lib/data/about-images.js';
 </script>
 
 <ImageGrid

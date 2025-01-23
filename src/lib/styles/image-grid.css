@@ -1,0 +1,11 @@
+.grid-wrapper {
+    @apply my-8;
+}
+
+.image-grid {
+    @apply grid;
+}
+
+.image-container {
+    @apply w-full;
+}

@@ -1,7 +1,7 @@
 <!-- src/lib/components/ImageGrid.svelte -->
 <script>
-	import '$lib/styles/ImageGrid.css';
-	import BaseImage from '$lib/components/Image.svelte';
+	import '$lib/styles/image-grid.css';
+	import Image from '$lib/components/Image.svelte';
 
 	export let images = [];
 	export let title = '';
@@ -27,7 +27,7 @@
 		{#each images as image}
 			<div class="image-container">
 				<div class="image-aspect-container">
-					<BaseImage
+					<Image
 						src={image.src}
 						alt={image.alt}
 						className="grid-image"
