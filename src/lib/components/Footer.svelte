@@ -12,7 +12,7 @@
 				 title="Contact us on WhatsApp"
 				 class="w-10 h-10 hover:opacity-80 transition-opacity">
 				<Image
-					src="/images/logos/whatsapp.png"
+					src="/images/logos/WhatsappLogo.png"
 					alt="Contact us on WhatsApp"
 					className="w-full h-full object-contain"
 				/>
@@ -21,7 +21,7 @@
 				 title="Follow us on Facebook"
 				 class="w-10 h-10 hover:opacity-80 transition-opacity">
 				<Image
-					src="/images/logos/facebook.png"
+					src="/images/logos/FacebookLogo.png"
 					alt="Follow us on Facebook"
 					className="w-full h-full object-contain"
 				/>
@@ -30,7 +30,7 @@
 				 title="Follow us on Instagram"
 				 class="w-10 h-10 hover:opacity-80 transition-opacity">
 				<Image
-					src="/images/logos/instagram.png"
+					src="/images/logos/InstagramLogo.png"
 					alt="Follow us on Instagram"
 					className="w-full h-full object-contain"
 				/>

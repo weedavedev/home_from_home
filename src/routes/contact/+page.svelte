@@ -30,7 +30,7 @@
 			</div>
 
 			<Image
-				src="/images/general/chick_laptop_contact_us.jpeg"
+				src="/images/general/chick-laptop-contact-us.jpeg"
 				alt="Chicky the dog looking at documents"
 				className="mx-auto w-auto"
 			/>

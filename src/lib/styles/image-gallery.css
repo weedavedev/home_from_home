@@ -1,21 +1,4 @@
 /* src/lib/styles/image-gallery.css */
-.gallery-wrapper {
-    @apply my-8;
-}
-
-.image-grid {
-    @apply grid grid-cols-1 gap-4 p-4;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-
-.image-container {
-    @apply w-full overflow-hidden;
-    aspect-ratio: 1;
-}
-
-.image-wrapper {
-    @apply w-full h-full relative;
-}
 
 .gallery-image {
     @apply w-full h-full object-cover;
@@ -30,21 +13,22 @@
     @apply scale-105;
 }
 
+
 .lightbox-overlay {
-    @apply fixed top-0 left-0 w-full h-full flex justify-center items-center z-50 opacity-0;
-    background: rgba(0, 0, 0, 0.9);
+    @apply fixed top-0 left-0 w-full h-full flex justify-center items-center z-[9999] bg-black bg-opacity-90;
     animation: fadeIn 0.3s ease forwards;
 }
-
 .lightbox-content {
-    @apply relative max-w-[90%] max-h-[90vh];
+    @apply relative max-w-[90vw] max-h-[90vh] flex justify-center items-center;
     transform: scale(0.95);
     animation: scaleIn 0.3s ease forwards;
 }
 
 .lightbox-content img {
-    @apply max-w-full max-h-[90vh] object-contain rounded;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    @apply w-auto h-auto max-w-[90vw] max-h-[90vh] object-contain rounded;
+    aspect-ratio: inherit;
+    width: auto !important;
+    height: auto !important;
 }
 
 .close-button {
@@ -60,27 +44,46 @@
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes scaleIn {
-    from { transform: scale(0.95); }
-    to { transform: scale(1); }
-}
-
-@media (max-width: 768px) {
-    .image-grid {
-        @apply grid-cols-2;
+    from {
+        transform: scale(0.95);
     }
-
-    .close-button {
-        @apply top-2.5 right-2.5;
+    to {
+        transform: scale(1);
     }
 }
 
-@media (max-width: 480px) {
-    .image-grid {
-        @apply grid-cols-1;
-    }
+/*@media (max-width: 768px) {*/
+/*    .image-grid {*/
+/*        @apply grid-cols-2;*/
+/*    }*/
+
+/*    .close-button {*/
+/*        @apply top-2.5 right-2.5;*/
+/*    }*/
+/*}*/
+
+/*@media (max-width: 480px) {*/
+/*    .image-grid {*/
+/*        @apply grid-cols-1;*/
+/*    }*/
+/*}*/
+
+.lightbox-container {
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.lightbox-overlay {
+    pointer-events: auto;
 }

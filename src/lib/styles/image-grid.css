@@ -1,11 +1,38 @@
+/* src/lib/styles/image-grid.css */
+
 .grid-wrapper {
-    @apply my-8;
+    @apply my-8 overflow-visible max-w-7xl mx-auto px-4 relative;
+    z-index: 1;
+}
+.grid-wrapper .image-grid {
+    @apply grid gap-4 p-4;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-wrapper .image-container {
+    @apply w-full overflow-hidden;
+    aspect-ratio: 1/1;
 }
 
 .image-grid {
-    @apply grid;
+    @apply grid gap-4 p-4;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+.image-container {
+    @apply w-full overflow-hidden aspect-square;
+}
+.image-grid {
+    @apply grid grid-cols-1 gap-4 p-4;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    margin: 0 auto;
 }
 
 .image-container {
-    @apply w-full;
+    @apply w-full overflow-hidden relative;
+    aspect-ratio: 1;
+    z-index: 0;
+}
+
+.image-wrapper {
+    @apply w-full h-full relative;
 }

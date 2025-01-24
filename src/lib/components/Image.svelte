@@ -13,7 +13,7 @@
 <img
 	src={fullSrc}
 	{alt}
-	class="base-image {className}"
+	class="image {className}"
 	loading="lazy"
 	decoding="async"
 />

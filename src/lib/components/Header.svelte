@@ -13,7 +13,7 @@
 			<Image
 				src="/images/logos/DogsHomeFromHomeLogo.jpg"
 				alt="Home From Home logo"
-				className="site-logo h-24 w-auto"
+				className="site-logo"
 			/>
 		</div>
 

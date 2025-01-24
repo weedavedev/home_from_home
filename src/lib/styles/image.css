@@ -1,8 +1,10 @@
 /* src/lib/styles/image.css */
 .image {
-    @apply w-auto h-auto max-w-[75%] max-h-[30rem] rounded shadow-sm mx-auto object-cover;
+    @apply w-auto h-auto rounded mx-auto object-cover;
 }
-
+.site-logo {
+    @apply w-auto max-h-[20em];
+}
 .social-icons {
     @apply flex gap-4 my-8 justify-center;
 }
