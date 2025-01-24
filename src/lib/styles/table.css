@@ -1,9 +1,19 @@
 table {
-	@apply w-full border-none text-left;
+	@apply w-full text-left;
 }
 
-th {
+thead {
+	@apply bg-gray-50;
 }
 
 th, td {
+	@apply px-4 py-3;
+}
+
+tr:not(:last-child) {
+	@apply border-b;
+}
+
+td:not(:last-child), th:not(:last-child) {
+	@apply border-r;
 }
