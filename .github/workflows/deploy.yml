@@ -2,11 +2,14 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: 'main'
+    branches: [ 'main' ]
 
 jobs:
   build_site:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -14,34 +17,23 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20  # Updated to newer Node version
+          node-version: 20
           cache: npm
 
       - name: Install dependencies
         run: npm install
 
-      - name: build
+      - name: Build
         env:
           PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: |
           npm run build
-          echo "dogshomefromhome.co.uk" > build/CNAME  # Keeping your custom domain
+          touch build/.nojekyll
+          echo "dogshomefromhome.co.uk" > build/CNAME
 
-      - name: Upload Artifacts
-        uses: actions/upload-pages-artifact@v3
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          path: 'build/'
-
-  deploy:
-    needs: build_site
-    runs-on: ubuntu-latest
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-    steps:
-      - name: Deploy
-        id: deployment
-        uses: actions/deploy-pages@v4
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./build
+          publish_branch: gh-pages
