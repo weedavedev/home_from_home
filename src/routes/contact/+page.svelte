@@ -17,12 +17,10 @@
 				<div class="mb-6">
 					<p class="mb-4">If we can't help we can offer other recommendations, We are proud to be a member of Strathearn
 						Dogs, a local Whatsapp dog/ pet business owners
-						group.
-						With over 40 members we support each other, share enquiries and provide the following services - dog
-						walking,
-						training, transportation, pet sitting, home boarding, grooming, equine care, house sitting, extended walks,
+						group. With over 40 members we support each other, share enquiries and provide the following services - dog
+						walking, training, transportation, pet sitting, home boarding, grooming, equine care, house sitting, extended walks,
 						adventure days plus many more!</p>
-					<p class="mb-4">Please contact Wendy on whatsapp if you have an enquiry. I'm will always try to help you and
+					<p class="mb-4">Please contact Wendy on Whatsapp if you have an enquiry. I will always try to help you and
 						your dog but if I can't, I'll try to help you find an alternative, just
 						message me.</p>
 					<h2 class="font-serif italic text-gray-700 text-2xxl transform -rotate-2">Wendy</h2>

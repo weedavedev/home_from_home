@@ -25,8 +25,8 @@
 				<td>Dogs are with me for up to 5 hours - limited availability.</td>
 			</tr>
 			<tr>
-				<td>Home Boarding*</td>
-				<td>Insured and licensed with Perth and Kinross Council. Dogs are cared for in my home as if they are one of my own while their owners are away - Fully booked for 2025</td>
+				<td>Home Boarding</td>
+				<td>Insured and licensed with Perth and Kinross Council. Dogs are cared for in my home as if they are one of my own while their owners are away.</td>
 			</tr>
 			</tbody>
 		</table>
