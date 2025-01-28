@@ -23,11 +23,22 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Debug Environment
+        run: |
+          echo "Checking environment variables:"
+          env | grep WEB3
+          echo "Current directory contents:"
+          ls -la
+
       - name: Build
         env:
           PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: |
+          echo "Build step starting with env:"
+          env | grep WEB3
           npm run build
+          echo "Build complete, checking build directory:"
+          ls -la build/
           touch build/.nojekyll
           echo "dogshomefromhome.co.uk" > build/CNAME
 
