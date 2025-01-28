@@ -26,7 +26,7 @@ jobs:
       - name: Debug Environment
         run: |
           echo "Checking environment variables:"
-          env | grep WEB3
+          env | grep WEB3 || echo "No WEB3 variables found yet"
           echo "Current directory contents:"
           ls -la
 
@@ -35,7 +35,7 @@ jobs:
           PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: |
           echo "Build step starting with env:"
-          env | grep WEB3
+          env | grep WEB3 || echo "No WEB3 variables found in build"
           npm run build
           echo "Build complete, checking build directory:"
           ls -la build/
