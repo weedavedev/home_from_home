@@ -1,1 +1,1 @@
-export const env={}
+export const env={"PUBLIC_WEB3FORMS_KEY":"568eaafe-7505-458f-b149-54c083c426a1"}
