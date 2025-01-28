@@ -22,7 +22,7 @@ jobs:
 
       - name: build
         env:
-          PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}  # Aligned with Shine's naming
+          PUBLIC_WEB3FORMS_KEY: ${{ secrets.WEB3FORMS_KEY }}
         run: |
           npm run build
           echo "dogshomefromhome.co.uk" > build/CNAME  # Keeping your custom domain
