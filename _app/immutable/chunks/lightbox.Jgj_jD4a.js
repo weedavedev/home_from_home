@@ -1,1 +1,0 @@
-import{w as i}from"./index.Bm2x9USY.js";function n(){const{subscribe:s,set:e}=i({isOpen:!1,image:null});return{subscribe:s,open:t=>e({isOpen:!0,image:t}),close:()=>e({isOpen:!1,image:null})}}const l=n();export{l};
