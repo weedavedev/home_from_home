@@ -46,7 +46,7 @@ export const certificate_images = [
 		alt: 'First Aid At Work certificate'
 	},
 	{
-		src: '/images/general/certificates/professional-dog-walkers.png',
+		src: '/images/general/certificates/LTDRLogo.png',
 		alt: 'Professional Dog Walkers'
 	},
 	{
