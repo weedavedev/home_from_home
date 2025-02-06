@@ -31,6 +31,7 @@
 						src={image.src}
 						alt={image.alt}
 						className="grid-image"
+						link={image.link}
 					/>
 				</div>
 			</div>

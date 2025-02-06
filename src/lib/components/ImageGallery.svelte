@@ -1,3 +1,4 @@
+<!-- src/lib/components/ImageGallery.svelte -->
 <script>
 	import '$lib/styles/image-grid.css';
 	import '$lib/styles/image-gallery.css';
@@ -6,6 +7,12 @@
 
 	export let images = [];
 	export let title = '';
+
+	function handleClick(image) {
+		if (!image.link) {
+			lightbox.open(image);
+		}
+	}
 </script>
 
 <div class="grid-wrapper">
@@ -17,9 +24,9 @@
 		{#each images as image}
 			<div class="image-container">
 				<div
-					class="image-wrapper clickable"
-					on:click={() => lightbox.open(image)}
-					on:keydown={(e) => e.key === 'Enter' && lightbox.open(image)}
+					class="image-wrapper {!image.link ? 'clickable' : ''}"
+					on:click={() => handleClick(image)}
+					on:keydown={(e) => e.key === 'Enter' && handleClick(image)}
 					role="button"
 					tabindex="0"
 				>
@@ -27,6 +34,7 @@
 						src={image.src}
 						alt={image.alt}
 						className="gallery-image"
+						link={image.link}
 					/>
 				</div>
 			</div>

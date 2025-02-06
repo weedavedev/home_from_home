@@ -31,15 +31,18 @@ export const extra_about_images = [
 export const certificate_images = [
 	{
 		src: '/images/general/certificates/pet_business_insurance.jpg',
-		alt: 'Pet Business insurance certificate'
+		alt: 'Pet Business insurance certificate',
+		link: 'https://www.petbusinessinsurance.co.uk/'
 	},
 	{
 		src: '/images/general/certificates/PKC_license.jpg',
-		alt: 'PKC License certificate'
+		alt: 'PKC License certificate',
+		link: 'https://www.pkc.gov.uk/'
 	},
 	{
 		src: '/images/general/certificates/disclosure-scotland-768x201.png',
-		alt: 'Disclosure Scotland Certificate'
+		alt: 'Disclosure Scotland Certificate',
+		link: 'https://www.disclosure.gov.scot/'
 	},
 	{
 		src: '/images/general/certificates/first_aid_at_work.png',
@@ -47,7 +50,8 @@ export const certificate_images = [
 	},
 	{
 		src: '/images/general/certificates/LTDRLogo.png',
-		alt: 'Professional Dog Walkers'
+		alt: 'Let the Dogs Run Auchterarder, Scotland',
+		link: 'https://www.letthedogsrun.uk'
 	},
 	{
 		src: '/images/general/certificates/k9_first_aid.png',
