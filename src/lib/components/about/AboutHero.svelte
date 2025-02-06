@@ -9,9 +9,20 @@
 		<h1>About Us</h1>
 		<div class="text-content">
 			<div>
-				<p>I established Home From Home in October 2019 to offer a variety of dog related services. With
+				<p>I established <a
+					href="/"
+					class="site-link"
+				>Home From Home</a> in October 2019 to offer a variety of dog related services. With
 					over 40 years experience of owning dogs and a variety of pets, creating an animal related business has
-					been a dream come true. I now own and run two dog based businesses, Home From Home and Let The Dogs Run.</p>
+					been a dream come true. I now own and run two dog based businesses, <a
+						href="/"
+						class="site-link"
+					>Home From Home</a> and <a
+						href="https://www.letthedogsrun.uk"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="site-link"
+					>Let The Dogs Run</a>.</p>
 				<p> I have streamlined Home From Home to offer weekly dog walks and homeboarding. Our dog walks are based at Let the dogs run on Tuesday, Wednesday and Thursday.
 					All the dogs can be off lead to run sniff and play at their own pace during the hourly sessions. Our Homeboarding services are avaliable upon request.</p>
 			</div>

@@ -1,22 +1,15 @@
 import forms from '@tailwindcss/forms';
 import typographyPlugin from '@tailwindcss/typography';
 import type { Config } from 'tailwindcss';
+import { theme } from './src/lib/styles/branding_styles';
 
 export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 	theme: {
-		screens: {
-			sm: '640px',
-			md: '768px',
-			lg: '1024px',
-			xl: '1280px',
-			'2xl': '1536px'
-		},
+		screens: theme.screens,
 		extend: {
-			fontFamily: {
-				source: ['Source Sans Pro', 'sans-serif'],
-				merriweather: ['Merriweather', 'serif']
-			}
+			colors: theme.colors,
+			fontFamily: theme.fonts
 		}
 	},
 	plugins: [typographyPlugin, forms]

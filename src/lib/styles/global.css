@@ -13,7 +13,10 @@
     .text-content {
         @apply flex flex-col gap-5 text-xl md:text-3xl leading-relaxed text-justify;
     }
-
+    /* Adding link styles at element level, similar to your heading styles */
+    a {
+        @apply text-branding-primary hover:underline transition-colors duration-200;
+    }
     /* Headers */
     h1, h2, h3, h4, h5 {
         @apply font-merriweather text-justify;

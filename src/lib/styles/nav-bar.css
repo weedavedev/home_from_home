@@ -8,7 +8,7 @@
 }
 
 .nav-indicator {
-    @apply absolute bottom-0 h-0.5 bg-red-400 transition-all duration-300 ease-in-out;
+    @apply absolute bottom-0 h-0.5 text-branding-primary transition-all duration-300 ease-in-out;
     width: 48px; /* Fixed width for the indicator */
 }
 
@@ -18,7 +18,7 @@
 }
 
 .nav-link.active {
-    @apply text-red-500;
+    @apply text-branding-primary2;
 }
 
 /* Add view transition for the indicator */
