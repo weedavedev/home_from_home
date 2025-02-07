@@ -1,3 +1,4 @@
+<!-- src/lib/components/PdfDownloader.svelte -->
 <script lang="ts">
 	export let pdfPath: string;
 	export let fileName: string = 'document.pdf';
@@ -12,15 +13,9 @@
 	}
 </script>
 
-<a
-	href={pdfPath}
-	on:click|preventDefault={handleDownload}
->
-	<slot>Download PDF</slot>
-</a>
 
-<style lang="postcss">
-    .pdf-link {
-        @apply text-blue-600 hover:text-blue-800 underline;
-    }
-</style>
+<a href={pdfPath}
+on:click|preventDefault={handleDownload}
+>
+<slot>Download PDF</slot>
+</a>
