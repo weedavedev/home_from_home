@@ -2,6 +2,8 @@
 	import { base } from '$app/paths';
 	import '$lib/styles/global.css';
 	import Image from '$lib/components/Image.svelte';
+
+	import PdfDownloader from '$lib/components/PdfDownloader.svelte';
 </script>
 
 <footer class="bg-white py-4 mt-auto border-t border-gray-200">
@@ -37,6 +39,12 @@
 			</a>
 		</div>
 		<p class="mb-2">&copy; {new Date().getFullYear()} Home From Home. All rights reserved.</p>
-		<a href="{base}/terms_and_conditions" class="text-red-500 hover:text-red-700">Terms and conditions</a>
+
+		<PdfDownloader
+			pdfPath="/Home_From_Home_Terms.pdf"
+			fileName="Home_From_Home_Terms.pdf"
+		>
+			Terms and conditions (PDF download)
+		</PdfDownloader>
 	</div>
 </footer>
